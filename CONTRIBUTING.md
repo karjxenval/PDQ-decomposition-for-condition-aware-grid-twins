@@ -1,25 +1,8 @@
 # Contributing
 
-This repository is designed as reproducible scientific-computing research code.
-
-Before submitting changes:
-
-1. Keep scripts deterministic through explicit seeds.
-2. Do not add machine-specific paths.
-3. Do not report only a single favourable run; use grids and aggregate tables.
-4. Add a baseline or ablation when introducing a new proposed variant.
-5. Run:
-
-```bash
-python -m compileall src scripts tests
-pytest -q
-```
-
-For new industrial cases, include:
-
-- the physical/operator model,
-- the scenario generator,
-- the measured outputs,
-- at least one physical error metric,
-- a sparse-sensor setting,
-- a fair baseline comparison.
+1. Do not commit raw third-party datasets.
+2. Keep data preparation separate from raw acquisition.
+3. Add or change a data source through `configs/sources.json` and the appropriate adapter.
+4. Do not tune hyperparameters on the test set.
+5. Add a test for changes that affect acquisition, configuration, or numerical utilities.
+6. Document any change that can alter published numerical results.

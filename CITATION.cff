@@ -1,10 +1,10 @@
 cff-version: 1.2.0
-title: "PDQ Industrial Surrogate Benchmarks"
-message: "If you use this repository, please cite it as below."
+message: "If you use this software, please cite the associated manuscript and this repository."
+title: "Condition-Aware Sparse-Sensor Recovery for Grid Twins"
 type: software
 authors:
   - family-names: Katende
     given-names: Ronald
-version: 0.1.0
-date-released: 2026-06-19
-license: MIT
+repository-code: "https://github.com/karjxenval/PDQ-decomposition-for-condition-aware-grid-twins"
+date-released: 2026-09-28
+version: 1.0.0

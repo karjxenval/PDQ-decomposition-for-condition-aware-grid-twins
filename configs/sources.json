@@ -1,0 +1,110 @@
+{
+  "era_uganda": {
+    "adapter": "era",
+    "profiles": [
+      "core",
+      "extended",
+      "full"
+    ],
+    "title": "Electricity Regulatory Authority Uganda public statistics",
+    "kind": "official_aggregate",
+    "country": "Uganda",
+    "landing": "https://www.era.go.ug/data-statistics/",
+    "pages": [
+      "https://www.era.go.ug/energy-purchases-sales-and-losses/",
+      "https://www.era.go.ug/energy-sales-by-customer-category/",
+      "https://www.era.go.ug/customer-growth/",
+      "https://www.era.go.ug/distribution-network-length/",
+      "https://www.era.go.ug/maximum-demand/",
+      "https://www.era.go.ug/transmission-energy-purchases-and-sales/",
+      "https://www.era.go.ug/transmission-network-length/",
+      "https://www.era.go.ug/installed-capacity/",
+      "https://www.era.go.ug/energy-generated/"
+    ]
+  },
+  "kios_real_pmu_2023": {
+    "adapter": "zenodo",
+    "profiles": [
+      "core",
+      "extended",
+      "full"
+    ],
+    "record_id": "8343635",
+    "title": "Real data from PMUs",
+    "kind": "real_pmu",
+    "country": "Cyprus",
+    "landing": "https://zenodo.org/records/8343635",
+    "notes": "Two real substations; timestamps; three-phase voltage/current phasors; frequency; ROCOF."
+  },
+  "grideye_real_pmu_2025": {
+    "adapter": "zenodo",
+    "profiles": [
+      "core",
+      "extended",
+      "full"
+    ],
+    "record_id": "17648863",
+    "title": "PMU datasets from GridEye project",
+    "kind": "real_pmu",
+    "country": "Cyprus",
+    "landing": "https://zenodo.org/records/17648863",
+    "notes": "Real transmission PMU events, steady state, R/X variation."
+  },
+  "ponte_moesa_2025": {
+    "adapter": "eth_dspace",
+    "profiles": [
+      "core",
+      "structural",
+      "extended",
+      "full"
+    ],
+    "item_uuid": "1d379016-0fc4-49c7-8ff0-85cbc12e624f",
+    "title": "Ponte Moesa Campagnola bridge benchmark",
+    "kind": "real_structural",
+    "country": "Switzerland",
+    "landing": "https://www.research-collection.ethz.ch/items/1d379016-0fc4-49c7-8ff0-85cbc12e624f",
+    "license_note": "CC BY-NC 4.0 on open dataset record; verify individual bitstream terms.",
+    "core_name_regex": "(?i)(general|organization|distributed.*optical|fibre|fiber)",
+    "structural_name_regex": "(?i)(general|organization|distributed.*optical|fibre|fiber|acceleration)",
+    "full_name_regex": ".*"
+  },
+  "lbnl_micropmu": {
+    "adapter": "lbnl_index",
+    "profiles": [
+      "extended",
+      "full"
+    ],
+    "title": "Berkeley Lab open distribution micro-PMU dataset",
+    "kind": "real_distribution_pmu",
+    "country": "USA",
+    "index": "https://powerdata-download.lbl.gov/data/",
+    "landing": "https://secpriv.lbl.gov/project/powerdata/",
+    "extended_regex": "(?i)(README\\.txt|_LBNL_a6_bus1_L1(MAG|ANG)\\.gz)$",
+    "full_regex": "(?i)(README\\.txt|\\.gz)$",
+    "notes": "Large source. Extended gets L1 magnitude/angle at three sites; full gets all raw files."
+  },
+  "pnnl_gesl": {
+    "adapter": "manual",
+    "profiles": [
+      "core",
+      "extended",
+      "full"
+    ],
+    "title": "PNNL/ORNL Grid Event Signature Library",
+    "kind": "real_transmission_pmu",
+    "landing": "https://gesl.ornl.gov/",
+    "notes": "1694 real transmission PMU events reported by PNNL; providers 9 and 10. Follow repository access workflow."
+  },
+  "z24_bridge": {
+    "adapter": "manual",
+    "profiles": [
+      "structural",
+      "extended",
+      "full"
+    ],
+    "title": "Z24 bridge benchmark",
+    "kind": "real_structural",
+    "landing": "https://bwk.kuleuven.be/bwm/z24",
+    "notes": "Non-commercial research terms; acknowledge KU Leuven; data may not be transferred to third parties."
+  }
+}

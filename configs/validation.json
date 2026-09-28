@@ -1,0 +1,87 @@
+{
+  "seed": 20260924,
+  "quick": {
+    "max_snapshots": 3000,
+    "ranks": [
+      2,
+      4,
+      6
+    ],
+    "sensor_fractions": [
+      0.2,
+      0.4
+    ],
+    "gamma_rel_grid": [
+      1e-06,
+      0.0001,
+      0.01,
+      1.0
+    ],
+    "rasd_max_iter": 20,
+    "bootstrap_reps": 300,
+    "grideye_stride": 20,
+    "ponte_max_channels": 800,
+    "ponte_sensor_counts": [
+      8,
+      16,
+      32
+    ],
+    "grideye_site_counts": [
+      1,
+      2,
+      3
+    ],
+    "grideye_nested_rank": 6
+  },
+  "publication": {
+    "max_snapshots": 30000,
+    "ranks": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      16,
+      20
+    ],
+    "sensor_fractions": [
+      0.05,
+      0.1,
+      0.2,
+      0.4
+    ],
+    "gamma_rel_grid": [
+      1e-08,
+      1e-07,
+      1e-06,
+      1e-05,
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "rasd_max_iter": 100,
+    "bootstrap_reps": 1000,
+    "grideye_stride": 10,
+    "ponte_max_channels": 2500,
+    "ponte_sensor_counts": [
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "grideye_site_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "grideye_nested_rank": 6
+  }
+}
